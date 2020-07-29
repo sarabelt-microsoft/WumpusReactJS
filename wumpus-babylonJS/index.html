@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Babylon.js - Coding4fun - 3D QRCode Maze</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <link href="css/main.css" rel="stylesheet" />
+
+    
+    <!--
+        <script src="scripts/babylon.js"></script>
+        <script src="scripts/babylon.gui.js"></script>
+        <script src="scripts/gui.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <script type = "text/babel"></script>
+    -->
+    
+    <script src="scripts/reactgui.js"></script>
+    <script src="scripts/cannon.js"></script>
+    <script src="scripts/caves.js" type = "text/babel"></script>
+    <script src="scripts/triviamanagement.js"></script>
+    <script src="scripts/gamelocations.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/gamecontrol.js"></script>
+</head>
+<body>
+    <div id="canvas" class="offScreen"></div>
+    <dialog id="dialog-form" class="offScreen">
+        <form method="dialog">
+            <fieldset>
+                <label id="form-label" for="name"></label>
+                <input type="text" name="name" id="form-value" class="text ui-widget-content ui-corner-all">
+                <button name="go" id ="startgame">go</button>
+            </fieldset>
+        </form>
+    </dialog>
+    <table id="start-controls">
+        <tr><td><div id="logo"></div></td></tr>
+        <tr class="startButtonRow" align="center">
+            <td>
+                <button id="new-game" class="startButton">new game</button>
+                <button id="high-scores" class="startButton">high scores</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
